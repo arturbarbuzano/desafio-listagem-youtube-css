@@ -1,0 +1,78 @@
+@import url('reset.css');
+
+* {
+    font-family: Roboto;
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "header header" "aside main";
+}
+
+header{
+    grid-area: header;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+main{
+    display: grid;
+    grid-area: main;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    padding:20px;
+}
+
+.content-main{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+.channel-title{
+    display: flex;
+    gap: 5px;
+    padding-right: 4px;
+    padding-top:5px;
+}
+
+p b{
+    font-size: medium;
+}
+
+.title p{
+    font-size: 0.85rem;
+}
+
+aside {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    grid-area: aside;
+    gap: 23px;
+}
+
+.content{
+    display:flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.left, .right{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+.foto-perfil{
+    width:35px;
+    border-radius: 50%;
+}
